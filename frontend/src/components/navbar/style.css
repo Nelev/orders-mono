@@ -1,0 +1,44 @@
+.nav-bar {
+  background-color: white;
+  color: #002b45;
+  box-shadow: none;
+}
+
+.navbar-icon-button {
+  color: white;
+  background-color: #4caf50;
+}
+
+.navbar-icon-button:hover {
+  color: #1976d2;
+  background-color: white;
+}
+
+.navbar-menu {
+  background-color: #4caf50;
+  box-shadow: none;
+  color: white;
+  min-width: 120px;
+  align-items: center;
+}
+
+.navbar-menu-icon {
+  color: white;
+}
+
+.navbar-menu-divider {
+  background: white;
+}
+
+.navbar-menu-paper {
+  width: 100px;
+}
+
+.navbar-menu-item {
+  min-height: 10px;
+}
+
+.navbar-menu-appbar {
+  box-shadow: none;
+  padding: 0px 0px 20px 0px;
+}
