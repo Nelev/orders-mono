@@ -28,6 +28,11 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod()
               .AllowCredentials();
     });
+options.AddPolicy("AllowFrontend", policy => {
+    policy.WithOrigins("http://localhost:5173") // React dev server
+                                .AllowAnyHeader() 
+                                .AllowAnyMethod() 
+                                .AllowCredentials(); });
 });
 
 // Register SignalR
@@ -50,6 +55,7 @@ var app = builder.Build();
 
 // CORS MUST be before routing
 app.UseCors("SignalRPolicy");
+app.UseCors("AllowFrontend");
 
 app.UseRouting();
 app.UseSession();
