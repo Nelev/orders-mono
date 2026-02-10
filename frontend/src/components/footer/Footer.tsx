@@ -50,60 +50,16 @@ const Footer: React.FC<IProps> = ({ handleContactClick, handleLoginClick }) => {
                 flexGrow: 1,
               }}
             >
-              <Link to="https://www.dhigroup.com/" target="/blank">
+              <Link to="https://www.https://github.com/Nelev/orders-mono/" target="/blank">
                 <Typography
                   textAlign="center"
                   fontWeight={"bold"}
                   fontSize={14}
                   color="#32CD32"
                 >
-                  ® SoftCan
+                  ® masm
                 </Typography>
               </Link>
-            </Box>
-            <Box sx={{ flexGrow: 1 }}>
-              {/* <Button sx={{ flexGrow: 0 }}>
-              <Link
-                to="https://www.dhigroup.com/legal-and-compliance/disclaimer"
-                target="/blank"
-              >
-                <Typography
-                  textTransform={"none"}
-                  fontWeight={"bold"}
-                  fontSize={14}
-                >
-                  Disclaimer
-                </Typography>
-              </Link>
-            </Button>
-            <Button sx={{ flexGrow: 0 }}>
-              <Link
-                to="https://www.dhigroup.com/legal-and-compliance/terms-of-use"
-                target="/blank"
-              >
-                <Typography
-                  textTransform={"none"}
-                  fontWeight={"bold"}
-                  fontSize={14}
-                >
-                  Terms of use
-                </Typography>
-              </Link>
-            </Button>
-            <Button sx={{ flexGrow: 0 }}>
-              <Link
-                to="https://www.dhigroup.com/legal-and-compliance/privacy-policy"
-                target="/blank"
-              >
-                <Typography
-                  textTransform={"none"}
-                  fontWeight={"bold"}
-                  fontSize={14}
-                >
-                  Privacy
-                </Typography>
-              </Link>
-            </Button>*/}
             </Box>
           </Toolbar>
         </AppBar>

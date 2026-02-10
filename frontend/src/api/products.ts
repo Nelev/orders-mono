@@ -6,14 +6,14 @@ const apiUrl = process.env.REACT_APP_API_URL;
 export const getProducts = async (): Promise<IProduct[]> => {
   try {
     const response: AxiosResponse<IProduct[]> = await axios.get(
-      `${apiUrl}/products`,
+      `${apiUrl}/api/orders`,
       {
         headers: {
           "Content-Type": "application/json",
         },
       },
     );
-    return response.data.mockItems;
+    return response.data;
   } catch (error) {
     console.error("Error fetching products:", error);
     throw error;

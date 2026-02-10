@@ -29,10 +29,6 @@ const LoginPage: React.FC = () => {
         alignItems: "center",
         width: "100%",
         height: "100vh",
-        backgroundImage: "url('softcan-background.png')",
-        backgroundRepeat: " no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
         zIndex: -1,
       }}
     >
