@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Chip, chipClasses, Grid } from "@mui/material";
 import FlightIcon from "@mui/icons-material/Flight";
 
-import weedImage from "./sample.png";
+import sampleImage from "./sample.png";
 import { IProduct } from "../../model/products";
 import { getTHCLevelColor } from "../../utils";
 
@@ -17,7 +17,7 @@ const ProductCardContent: React.FC<IProps> = ({ product }) => {
         <Grid item xs={4}>
           <Box
             component={"img"}
-            src={weedImage}
+            src={sampleImage}
             sx={{ height: "100px", width: "100px" }}
           />
         </Grid>
@@ -30,13 +30,13 @@ const ProductCardContent: React.FC<IProps> = ({ product }) => {
           {product.description}
           <br />
           <Chip
-            label="Hybrid"
+            label="tag"
             color="primary"
             variant="outlined"
             size="small"
           />
           <Chip
-            label="Relaxing"
+            label="tag"
             sx={{
               [`& .${chipClasses.icon}`]: {
                 color: "white",

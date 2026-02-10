@@ -20,7 +20,7 @@ const CustomerHomepage: React.FC = () => {
     sativa: false,
     indica: false,
   }); */
-  const [thcLevelFilters, setThcLevelFilters] = React.useState({
+  const [priceFilterd, setPriceFilters] = React.useState({
     Level0: false,
     Level10: false,
     Level19: false,
@@ -31,14 +31,14 @@ const CustomerHomepage: React.FC = () => {
 
   return (
     <>
-      <Typography variant="h4">Strains</Typography>
+      <Typography variant="h4">Products</Typography>
       {!isSmallScreen ? (
         <Grid container>
           <Grid item xs={3}>
             <Typography variant="h5">Filters</Typography>
             <ProductsFilters
-              thcLevelFilters={thcLevelFilters}
-              setThcLevelFilters={setThcLevelFilters}
+              pricesFilters={priceFilterd}
+              setPricesFilters={setPriceFilters}
             />
           </Grid>
           <Grid item xs={7}>

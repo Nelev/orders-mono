@@ -50,12 +50,12 @@ const ProductCard: React.FC<IProps> = ({ product }) => {
           </Typography>
           <br />
           <Typography variant="body2" color="text.secondary">
-            <b>THC</b>:{" "}
+            <b>Title</b>:{" "}
             <span style={{ color: getTHCLevelColor(product.thc) }}>
-              {product.thc}%
+              {product.thc}
             </span>
             <br />
-            <b>Price</b>: {product.price} eur / g
+            <b>Price</b>: {product.price}
             <br />
             {product.description}
           </Typography>
@@ -65,13 +65,13 @@ const ProductCard: React.FC<IProps> = ({ product }) => {
             width={"100%"}
           >
             <Chip
-              label="Hybrid"
+              label="tag1"
               color="primary"
               variant="outlined"
               size="small"
             />
             <Chip
-              label="Relaxing"
+              label="tag2"
               sx={{
                 [`& .${chipClasses.icon}`]: {
                   color: "white",
