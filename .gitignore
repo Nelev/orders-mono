@@ -3,6 +3,7 @@
 *.log
 .env
 .env.*
+.vs/
 
 # --- Frontend (React) ---
 frontend/node_modules/
@@ -11,12 +12,12 @@ frontend/dist/
 frontend/.env
 
 # --- Backend (C# / .NET) ---
-backend/bin/
-backend/obj/
-backend/.vs/
-backend/*.user
-backend/*.suo
-backend/appsettings.Development.json
+backend/orders/bin/
+backend/orders/obj/
+backend/orders/.vs/
+backend/orders/*.user
+backend/orders/*.suo
+backend/orders/appsettings.Development.json
 
 # --- IDE / Editor ---
 .vscode/
