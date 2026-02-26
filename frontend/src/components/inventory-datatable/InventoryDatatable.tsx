@@ -96,7 +96,7 @@ const columns: GridColDef<(typeof mockItems)[number]>[] = [
   },
 ];
 
-const mockItems: IProduct[] = [...Array(200)].map((item, index) => ({
+const mockItems: IProduct[] = [...Array(200)].map((index) => ({
   id: index,
   productName: "pink lady",
   farm: "weed company",
