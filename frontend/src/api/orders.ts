@@ -6,7 +6,7 @@ const apiUrl = process.env.REACT_APP_API_URL;
 export const getNewOrders = async (): Promise<IOrder[]> => {
   try {
     const response: AxiosResponse<IOrder[]> = await axios.get(
-      `${apiUrl}/api/orders`,
+      `${apiUrl}/orders`,
       {
         withCredentials: true,
         headers: {

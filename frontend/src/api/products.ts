@@ -6,7 +6,7 @@ const apiUrl = process.env.REACT_APP_API_URL;
 export const getProducts = async (): Promise<IProduct[]> => {
   try {
     const response: AxiosResponse<IProduct[]> = await axios.get(
-      `${apiUrl}/api/orders`,
+      `${apiUrl}/orders`,
       {
         headers: {
           "Content-Type": "application/json",
