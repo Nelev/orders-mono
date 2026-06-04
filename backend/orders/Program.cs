@@ -28,11 +28,13 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod()
               .AllowCredentials();
     });
-options.AddPolicy("AllowFrontend", policy => {
-    policy.WithOrigins("http://localhost:5173") // React dev server
-                                .AllowAnyHeader() 
-                                .AllowAnyMethod() 
-                                .AllowCredentials(); });
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173") // React dev server
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod()
+                                    .AllowCredentials();
+    });
 });
 
 // Register SignalR
